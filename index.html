@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet icon" href="./img/logo.svg">
+    <script src="https://kit.fontawesome.com/f12868751b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo-nav">
+                <img src="./img/logo.svg" alt="logo de alura">
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <form action="" class="form-ecnriptador">
+                    <div class="text_in">
+                        <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+                        <div class="text_in_info">
+                            <div class="info">
+                                <img src="./img/exclamacion.svg" alt="">
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="text_in_btns">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </form>
+
+                <div class="text_out_sec">
+                    <div class="out_content">
+                        <div class="content" id="default">
+                            <div class="text_out_img">
+                                <img src="./img/muneco.svg" alt="Imagen de animada">
+                            </div><p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "content invisible" id="result">
+                            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <section class="redes-sociales">
+            <div class="contenedor">
+                <a href="https://www.linkedin.com/in/eddy-espinoza-3a3771263/" class="twitter" ><i class="fab fa-linkedin"></i></a> 
+                <a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/eddyespinoza14" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com" class="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/EddyEspinoza123" class="github"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="parrafo-footer">
+                <p>Create By Eddy Espinoza</p>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+
+<script src="./scripts.js"></script>
+</html>
